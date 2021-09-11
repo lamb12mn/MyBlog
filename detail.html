@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2745258_d9ulg092iih.css">
+    <script src="./js/jquery3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/message.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/content-right.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/player.css">
+    <script src="./js/dayList.js"></script>
+    <title>日记</title>
+</head>
+<body>
+    <!-- 1.头部 -->
+    <div class="head">
+        <div class="head-center">
+            <div class="logo"><img src="./image/logo.png" alt=""></div>
+            <a href="www.qq.com" class="qq iconfont icon-qq" style="font-size: 50px;"></a>
+            <div class="nav_menu w">
+                <div class="menu_item">
+                    <div class="home"><i class="iconfont icon-shouye"></i>首页</div>
+                    <div class="web_home"><i class="iconfont icon-shouye"></i><a href="./index.html">首页</a></div>
+                </div>
+                <div class="menu_item">
+                    <div class="home"><i class="iconfont icon-bowen"></i>文章</div>
+                    <div class="web_home"><i class="iconfont icon-bowen"></i><a href="./article.html">文章</a></div>
+                </div>
+                <div class="menu_item">
+                    <div class="home"><i class="iconfont icon-liuyan"></i>留言</div>
+                    <div class="web_home"><i class="iconfont icon-liuyan"></i><a href="./message.html">留言</a></div>
+                </div>
+                <div class="menu_item">
+                    <div class="home"><i class="iconfont icon-quanzi"></i>博客圈</div>
+                    <div class="web_home"><i class="iconfont icon-quanzi"></i><a href="./circle.html">博客圈</a></div>
+                </div>
+                <div class="menu_item">
+                    <div class="home"><i class="iconfont icon-quanzi"></i>日记</div>
+                    <div class="web_home"><i class="iconfont icon-quanzi"></i><a href="./dayList.html">日记</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 1.头部结束 -->
+    <div class="hideContent">
+        <div class="hideblock">
+            <div class="line1">
+                <div class="line1-autor"><img src="./image/tou1.jpg"></div>
+                <div class="line1-word">
+                    <p>Miss.Xiao</p>
+                    <p>程序猿</p>
+                </div>
+            </div>
+            <div class="line2">
+                <ul class="line2-logo">
+                    <li><i class="iconfont icon-github"></i></li>
+                    <li><i class="iconfont icon-xunlei1193424easyiconnet"></i></li>
+                    <li><i class="iconfont icon-tubiao214"></i></li>
+                    <li><i class="iconfont icon-iconfontweixin"></i></li>
+                    <li><i class="iconfont icon-QQ"></i></li>
+                </ul>
+            </div>
+            <div class="line3">
+                <p> NEW PAGE</p>
+            </div>
+            <div class="line4">
+                <div class="line4-left">
+                    <p>热</p>
+                    <p>门</p>
+                    <p>文</p>
+                    <p>章</p>
+                </div>
+                <div class="line4-right">
+                    <p>
+                        <span style="background-color: orange;">1</span>
+                        <span>没有经验的第一次</span>
+                    </p>
+                    <p>
+                        <span style="background-color: rgb(134, 168, 190);">2</span>
+                        <span>设置看板娘</span>
+                    </p>
+                    <p>
+                        <span style="background-color: rgb(79, 24, 131);">3</span>
+                        <span>教你怎么搞懂jQuery</span>
+                    </p>
+                    <p>
+                        <span style="background-color: rgb(238, 25, 25);">4</span>
+                        <span>看看前端到底干了啥</span>
+                    </p>
+                    <p>
+                        <span style="background-color: rgb(19, 166, 185);">5</span>
+                        <span>跟我一起学vue</span>
+                    </p>
+                </div>
+            </div>
+            <div class="line5">
+                <div class="line5-left">
+                    <p>最</p>
+                    <p>近</p>
+                    <p>访</p>
+                    <p>客</p>
+                </div>
+                <div class="line5-right">
+                    <img src="./image/tou2.jpg" alt="">
+                    <img src="./image/tou3.jpg" alt="">
+                    <img src="./image/tou4.jpg" alt="">
+                    <img src="./image/tou5.jpg" alt="">
+                    <img src="./image/tou6.jpg" alt="">
+                    <img src="./image/tou1.jpg" alt="">
+                    <img src="./image/tou3.jpg" alt="">
+                    <img src="./image/tou4.jpg" alt="">
+                    <img src="./image/tou5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="hidebtn">
+            <i class="iconfont icon-xiangzuo"></i>
+        </div>
+    </div>
+    <div class="content">
+        <h2>您现在的位置是：
+            <a href="./index.html">首页</a>&nbsp;&gt;&nbsp;
+            <a href="./article.html">文章</a>&nbsp;&gt;&nbsp;
+            <a href="./detail.html">文章详情</a>&nbsp;&gt;&nbsp;
+        </h2>
+        <div class="content-left">
+            <div class="news">
+                <!-- <h1>给王先生的一封情书9</h1>
+                <p class="news_author">
+                    <span class="news_1"><i class="iconfont icon-chuangzuozhezhongxin"></i>叶子</span>
+                    <span class="news_2"><i class="iconfont icon-rili"></i>2020-02-14 21:19:26</span>
+                </p>
+                <div class="news_content">
+                    <p>今天这篇文章写一下云上班的体验，采访对象豌豆爸爸。作为一名程序员，天天和计算机打交道，每天祈祷bug可以少一点，需求可以明确一点。对于自身而言，提高工作效率、掌握最新技术是IT工作者的重要指标。在年前，豌豆豆...
+                    </p>
+                    <p>今天这篇文章写一下云上班的体验，采访对象豌豆爸爸。作为一名程序员，天天和计算机打交道，每天祈祷bug可以少一点，需求可以明确一点。对于自身而言，提高工作效率、掌握最新技术是IT工作者的重要指标。在年前，豌豆豆...
+                    </p>
+                </div>
+                <div class="copyright_author">
+                    <p>
+                        <strong>版本声明：</strong>本站原创文章，于2020-02-14，由<a href="#">Miss.Xiao</a>
+                    </p>
+                    <p class="p-hidden">
+                        <strong>转载请注明：</strong><a href="#">给王先生的一封情书9</a> | <a href="#">Miss.Xiao</a>
+                    </p>
+                     <p style="font-size: 18px;margin:20px 10px">下一篇:<a style="padding-left: 10px; color:teal;"
+                href="#">云上班体验</a></p>
+                </div> -->
+            </div>
+            <div class="money">
+                <div class="money-left">
+                    <div class="dashang">打赏</div>
+                    <div id="cy-reward-pop" style="display: none;">
+                        <div node-type="cy-close-btn" class="cy-close-btn"></div> <img class="cy-avatar"
+                            src="./image/logo.png">
+                        <div class="cy-reward-title">感谢您的支持，我会继续努力！</div>
+                        <div node-type="cy-reward-code" class="cy-reward-code"> <img node-type="alipay-code"
+                                style="display: block;" src="./image/zhifubao.jpg">
+                            <img node-type="weichat-code" src="./image//weixin.jpg" style="display: none;"> </div>
+                        <div class="cy-reward-txt">扫码打赏，建议金额1-10元</div>
+                        <div node-type="platform-choice" class="platform-choice clearfix">
+                            <label><input type="radio" name="qw" value="支付宝"><i
+                                    class="iconfont icon-zhifubaozhifu"></i>支付宝</label>
+                            <label> <input type="radio" name="qw" value="微信"><i
+                                    class="iconfont icon-weixinzhifu"></i>微信</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="money-right">
+                    <p><img src="./image/weixin.jpg" alt=""></p>
+                    <p>欢迎关注博主微信公众号</p>
+                </div>
+            </div>
+            <div class="left-line1">
+                <div class="left-line1-circle1"></div>
+            </div>
+            <div class="left-line2">
+                <div class="left-line2-top">
+                    <div class="area-textarea">
+                        <textarea class="textarea-content" name="" node-type="textarea" id="txtcontent"
+                            placeholder="有事没事说两句..."></textarea>
+                    </div>
+                </div>
+                <div class="left-line2-bottom">
+                    <ul>
+                        <li class="iconfont icon-biaoqing"></li>
+                        <li class="iconfont icon-tupian_huaban"></li>
+                    </ul>
+                    <div class="comment" id="btnAdd">畅言一下</div>
+                </div>
+            </div>
+            <div class="left-line3">
+                <div class="left-line3-title">评论</div>
+                <div class="left-line3-comment">
+                    <span class="comment-number">
+                        <span class="cn-number">1902</span>人参与,
+                        <span class="cn-number">671</span>条评论
+                    </span>
+                </div>
+            </div>
+            <div class="left-line4">
+                <span>热门评论</span>
+            </div>
+            <div class="left-line5" id="tbList">
+                <div class="hotComent">
+                    <div class="hotComent-left"><img class="hotComent-left-img" src="./image/tou1.jpg" alt=""></div>
+                    <div class="hotComent-right">
+                        <p>
+                            <span>不知道叫啥</span><span>[23232.@qq.com]</span><span>2018年8月15日14:45:34</span>
+                        </p>
+                        <p>上线了上线了三斜杠</p>
+                        <p>
+                            <span class="delete">删除</span>
+                            <span class="iconfont icon-lian_jie"></span>
+                            <span class="iconfont icon-pinglun"></span>
+                            <span class="iconfont icon-dianzan"></span>
+                            <span class="reponse">回复</span>
+                        </p>
+                        <div class="repContent">
+                            <img src="./image/tou2.jpg" alt=""><span>1刘德华:</span>
+                            <span class="ct">但是</span>
+                            <span class="del">删除评论</span>
+                        </div>
+                    </div>
+                    <div class="hotComent-bottom">
+                        <img src="./image/tou2.jpg" alt=""><span>1刘德华:</span>
+                        <div class="area-textarea">
+                            <textarea class="textarea-content" name="" node-type="textarea" id="repContent"
+                                placeholder="有事没事说两句..."></textarea>
+                        </div>
+                        <p><span class="rep">回复</span></p>
+                    </div>
+                    <!-- <div class="repContent">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="content-right-line1">
+                <div class="line1-title">
+                    <span>
+                        <input class="swing" id="artist" type="text" placeholder="输入关键字搜索">
+                        <label for="artist">Search</label>
+                    </span>
+                </div>
+                <div class="line1-content">
+                    <ul id="category">
+                        <li class="" data-index="0"><a href="#">全部文章</a></li>
+                        <li class="" data-index="1"><a href="#">个人日记</a></li>
+                        <li class="" data-index="2"><a href="#">HTML5&CSS3</a></li>
+                        <li class="" data-index="3"><a href="#">JavaScript</a></li>
+                        <li class="" data-index="4"><a href="#">ASP.NET MVC</a></li>
+                        <li class="" data-index="5"><a href="#">其他</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-right-line2">
+                <div class="line2-title">
+                    <span>点击排行</span>
+                </div>
+                <div class="line2-content">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i>1</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>2</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>3</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>4</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>5</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>6</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-right-line3">
+                <div class="line3-title">
+                    <span>热门文章</span>
+                </div>
+                <div class="line3-content">
+                    <!-- <ul>
+                        <li>
+                            <a href="">
+                                <img src="./image/img2.jpg" alt="">
+                                js事件循环(event loop)、宏任务与微任务
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./image/img2.jpg" alt="">
+                                js事件循环(event loop)、宏任务与微任务
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./image/img2.jpg" alt="">
+                                js事件循环(event loop)、宏任务与微任务
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./image/img2.jpg" alt="">
+                                js事件循环(event loop)、宏任务与微任务
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./image/img2.jpg" alt="">
+                                js事件循环(event loop)、宏任务与微任务
+                            </a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2.内容区域开始 -->
+    <!-- 3.尾部区域 -->
+    <!-- 3。尾部区域结束 -->
+    <ul class="layui-fixbar" id="toTop">
+        <li class="iconfont icon-top" lay-type="top" style="display: list-item;"></li>
+    </ul>
+    <div id="QPlayer">
+        <div id="pContent">
+            <div id="player">
+                <span class="cover"></span>
+                <div class="ctrl">
+                    <div class="musicTag marquee">
+                        <strong>Title</strong>
+                        <span> - </span>
+                        <span class="artist">Artist</span>
+                    </div>
+                    <div class="progress">
+                        <div class="timer left">0:00</div>
+                        <div class="contr">
+                            <div class="rewind icon"></div>
+                            <div class="playback icon"></div>
+                            <div class="fastforward icon"></div>
+                        </div>
+                        <div class="right">
+                            <div class="liebiao icon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ssBtn">
+                <div class="adf"></div>
+            </div>
+        </div>
+        <ol id="playlist"></ol>
+    </div>
+    <script type="text/javascript" color="0,0,255" opacity="0.5" zIndex="-2" count="300" src="./js/article.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/articleData.js"></script>
+    <script src="./js/message.js"></script>
+    <!-- <script src="./js/common.js"></script> -->
+    <script>
+        function bgChange() {
+            var lis = $('.lib');
+            for (var i = 0; i < lis.length; i += 2)
+                lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
+        }
+        window.onload = bgChange;
+        let phone = localStorage.getItem('phone');
+        let password = localStorage.getItem('password')
+        let img = localStorage.getItem('img')
+        // console.log(phone, password, img);
+        if (phone !== "" && password !== "") {
+        }
+        if (img == null) {
+            window.location.href = "./resiger.html";
+        } else {
+            $(".qq").removeClass().addClass("qq");
+            var imgStr = '<img src="' + img + '" class="aut" alt="">';
+            $(".qq").append(imgStr);
+            $(".line1-autor img").remove();
+            $(".line1-autor").append(imgStr);
+            $($(".line1-word p").eq(0)).text(phone)
+        }
+        let con = localStorage.getItem("newsContent");
+        let conid = localStorage.getItem("id");
+        console.log(conid);
+        $(".news").append(con);
+        // console.log($(".news").children());
+        $(".left-line1-circle1").append(imgStr)
+        $(".nextPage").click(function () {  
+            let id = Number(conid)+1;
+            // console.log(1);
+            // console.log(id);
+            // let id = conid+1;
+            var thisContent = '<h1>' + detailArticle[id]["title"] +
+                    '</h1><p class="news_author"><span class="news_1"><i class="iconfont icon-chuangzuozhezhongxin"></i>' +
+                    detailArticle[id]["artist"] +
+                    '</span><span class="news_2"><i class="iconfont icon-rili"></i>' + detailArticle[id][
+                    "date"] + '</span></p><div class="news_content"><p>' + detailArticle[id]["detail"] +
+                    '</p><p>' + detailArticle[id]["detail"] +
+                    '</p> </div><div class="copyright_author"><p><strong>版本声明：</strong>本站原创文章，于' +
+                    detailArticle[id]["date"] + '，由<a href="#">' + detailArticle[id]["artist"] +
+                    '</a></p><p class="p-hidden"><strong>转载请注明：</strong><a href="#">' + detailArticle[id]["title"] + '</a> | <a href="#">' + detailArticle[id]['artist'] + '</a></p> <p style="font-size: 18px;margin:20px 10px">下一篇:<a class="nextPage" style="padding-left: 10px; color:teal;" href="./detail.html">'+ detailArticle[Number(id)+1]["title"]+'</a></p></div>';
+            $(".news").children().remove();
+            $(".news").append(thisContent);
+            localStorage.setItem("id",id);
+            localStorage.setItem("newsContent",thisContent);
+            if(id==27){
+                alert("这是最后一篇");
+            }
+        })
+    </script>
+</body>
+</html>

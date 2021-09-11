@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 layui.css -->
+    <!-- <link rel="stylesheet" href="./layui/css/layui.css"> -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2745258_omjad8uh06q.css">
+    <link href="./css/animate.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/page2Style.css">
+    <link rel="stylesheet" href="./css/player.css">
+    <link rel="stylesheet" href="./css/buttons.css">
+    <script src="./js/click.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/index.js"></script>
+    <style>
+    </style>
+    <title>首页</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="layer-right">
+            <ul>
+                <li><a href="./index.html" class=" button button-3d button-glow button-border button-rounded">首页</a></li>
+                <li><a href="./article.html" class=" button button-3d button-glow button-border button-rounded">文章</a></li>
+                <li> <a href="./message.html" class=" button button-3d button-glow button-border button-rounded">留言</a></li>
+                <li> <a href="./circle.html" class=" button button-3d button-glow button-border button-rounded">博客圈</a></li>
+                <li> <a href="./dayList.html" class=" button button-3d button-glow button-border button-rounded">日记</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 第一页 -->
+    <div class="section" id="section1">
+        <div class="fp-tablecell">
+            <div class="page1">
+                <button id="btnRight" class="iconfont icon-caidan button-3d button-glow button-border button-rounded" style="color: #fff;width: 50px;height: 50px;"></button>
+                <div class="nav wow zoomIn" data-wow-duration="2s">
+                    <h1>Miss.Xiao</h1>      
+                    <p>欢迎来到我的博客</p>
+                    <a class="btnEnter button button-3d button-glow button-border button-rounded " style="margin-top: 20px;color: #fff;" href="./resiger.html">Enter Blog</a>
+                </div>
+                <a class="next wow fadeInUp iconfont icon-xia xia button-glow" data-wow-duration="2s" id="next"></a>
+            </div>
+        </div>
+    </div>
+    <!-- 第一页结束 -->
+    <!-- 第二页 -->
+    <div class="section" id="section2">
+        <div class="fp-tablecell">
+            <div class="page2">
+                <div class="inner wow fadeInDown" data-wow-delay=".2s">
+                    <h1>昨天今天</h1>
+                    <p>如果你无法忘掉昨天，就不会有一个更好的明天。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 第二页结束 -->
+    <!-- 第三页-->
+    <div class="section" id="section3">
+        <div class="page3">
+            <div class="inner wow fadeInDown" data-wow-delay=".2s">
+            </div>
+        </div>
+    </div>
+    <ul class="layui-fixbar" id="toTop">
+        <li class="iconfont icon-top" lay-type="top" style="display: list-item;"></li>
+    </ul>
+    <canvas id="mineCanvas"></canvas>
+    <script src="./js/jquery3.6.0.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/mSlider.min.js"></script>
+    <!-- <script src="./js/articleData.js"></script> -->
+    <script src="./js/script.js"></script>
+    <!-- <script src="./js/common.js"></script> -->
+    <script>
+        // 回到顶部
+        $("#toTop").click(function () {
+            $(window).scrollTop(0);
+        })
+        $("#next").click(function () {
+            $(document).scrollTop(900);
+        })
+        $("#btnRight").mouseover(function (e) {
+            $(this).addClass("animated rubberBand");
+            // bounceInLeft
+            setTimeout(function () {
+                $(".circlesContent p").removeClass('rubberBand');
+            }, 2000);
+        })
+        window.onload = function () {
+            //移动端使用touchend
+            var event = navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i) ? 'touchend' : 'mouseover';
+            // 选择器
+            var Q = function (id) {
+                return document.getElementById(id)
+            };
+            //右
+            var _right = new mSlider({
+                dom: ".layer-right",
+                direction: "right",
+                distance: "300px"
+            });
+            Q("btnRight").addEventListener(event, function (e) {
+                _right.open();
+            })
+        }
+        // let phone = localStorage.getItem('phone');
+        // let password = localStorage.getItem('password')
+        // let img = localStorage.getItem('img')
+        // if (img == null) {
+        //     $(".btnEnter").removeAttr("href").attr("href", "./resiger.html");
+        // } else {
+        //     $(".btnEnter").removeAttr("href").attr("href", "./article.html");
+        //     // console.log(1);
+        // }
+        //初始化应用缓存
+        // (function () {
+        //     if (!getCookie('eks_cache_keys')) { //每次进入页面初始化缓存
+        //         localStorage.clear();
+        //     }
+        // })();
+    </script>
+</body>
+</html>

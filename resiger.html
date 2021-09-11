@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="./css/resiger.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2672579_ln4i3u4t6p.css">
+    <title>注册</title>
+</head>
+<body>
+    <!-- 1.头部 -->
+    <div class="head">
+        <div class="head-center">
+            <div class="logo"><img src="./image/logo.png" alt=""></div>
+            <div class="header-main-right">
+                <a href="#">已有账号？</a>
+                <a href="./login.html">登录</a>
+            </div>
+        </div>
+    </div>
+    <!-- 1.头部结束 -->
+    <div class="content-container">
+        <div class="content-container-main">
+            <div>
+                <label for="">手机号</label>
+                <input type="text" name="phone">
+                <span class="display-none" id="span1">
+                    <i id="iconfont"></i>
+                </span>
+                <!-- <span>请输入您的手机号码</span> -->
+            </div>
+            <br />
+            <div><button id="btn" style="width: 170px;">免费获取短信动态码</button>
+                <span class="display-none" id="spann">
+                </span>
+            </div>
+            <div>
+                <label for="">短信动态码</label>
+                <input type="text" id="code" name="code">
+                <span class="display-none" id="span2">
+                </span>
+            </div>
+            <div>
+                <label for="">创建密码</label>
+                <input type="password" id="password">
+                <span class="display-none" id="span3">
+                </span>
+            </div>
+            <p></p>
+            <div>
+                <label for="">确认密码</label>
+                <input type="password" id="passrepeat" name="passrepeat">
+                <span class="display-none" id="span4">
+                </span><br />
+            </div>
+            <div>
+                <button type="button" id="registerto">完成注册并登录</button>
+            </div>
+            <div class="user-agreementinfo">
+                <!-- <div></div> -->
+                <!-- 我已阅读并同意 -->
+                <a href="">《用户协议》</a><a href="">《隐私政策》</a>
+                <!-- ，并授权美团使用该美团账号信息（如昵称、头像、收货地址）进行统一管理
+             -->
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery3.6.0.min.js"></script>
+    <script src="./js/resiger.js"></script>
+</body>
+</html>

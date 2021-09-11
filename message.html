@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2745258_1waoj87vfhv.css">
+    <script src="./js/jquery3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/message.css">
+    <link rel="stylesheet" href="./css/player.css">
+    <link rel="stylesheet" href="./css/content-right.css">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <script src="./js/message.js"></script>
+    <title>留言</title>
+</head>
+<body>
+    <!-- 1.头部 -->
+    <div class="head">
+        <div class="head-center">
+            <div class="logo"><img src="./image/logo.png" alt=""></div>
+            <a href="#" class="qq iconfont icon-qq" style="font-size: 50px;"></a>
+            <div class="nav_menu w">
+                <div class="menu_item">
+                    <div class="home"><i class="iconfont icon-shouye"></i>首页</div>
+                    <div class="web_home"><i class="iconfont icon-shouye"></i><a href="./index.html">首页</a></div>
+                </div>
+                <div class="menu_item">
+                    <div class="home"><i class="iconfont icon-bowen"></i>文章</div>
+                    <div class="web_home"><i class="iconfont icon-bowen"></i><a href="./article.html">文章</a></div>
+                </div>
+                <div class="menu_item">
+                    <div class="home"><i class="iconfont icon-liuyan"></i>留言</div>
+                    <div class="web_home"><i class="iconfont icon-liuyan"></i><a href="./message.html">留言</a></div>
+                </div>
+                <div class="menu_item">
+                    <div class="home"><i class="iconfont icon-quanzi"></i>博客圈</div>
+                    <div class="web_home"><i class="iconfont icon-quanzi"></i><a href="./circle.html">博客圈</a></div>
+                </div>
+                <div class="menu_item">
+                    <div class="home"><i class="iconfont icon-quanzi"></i>日记</div>
+                    <div class="web_home"><i class="iconfont icon-quanzi"></i><a href="./dayList.html">日记</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 1.头部结束 -->
+    <!-- 1.1隐藏栏开始 -->
+    <div class="hideContent">
+        <div class="hideblock">
+            <div class="line1">
+                <div class="line1-autor"><img src="./image/tou1.jpg"></div>
+                <div class="line1-word">
+                    <p>Miss.Xiao</p>
+                    <p>程序猿</p>
+                </div>
+            </div>
+            <div class="line2">
+                <ul class="line2-logo">
+                    <li><i class="iconfont icon-github"></i></li>
+                    <li><i class="iconfont icon-xunlei1193424easyiconnet"></i></li>
+                    <li><i class="iconfont icon-tubiao214"></i></li>
+                    <li><i class="iconfont icon-iconfontweixin"></i></li>
+                    <li><i class="iconfont icon-QQ"></i></li>
+                </ul>
+            </div>
+            <div class="line3">
+                <p> NEW PAGE</p>
+            </div>
+            <div class="line4">
+                <div class="line4-left">
+                    <p>热</p>
+                    <p>门</p>
+                    <p>文</p>
+                    <p>章</p>
+                </div>
+                <div class="line4-right">
+                    <p>
+                        <span style="background-color: orange;">1</span>
+                        <span>没有经验的第一次</span>
+                    </p>
+                    <p>
+                        <span style="background-color: rgb(134, 168, 190);">2</span>
+                        <span>设置看板娘</span>
+                    </p>
+                    <p>
+                        <span style="background-color: rgb(79, 24, 131);">3</span>
+                        <span>教你怎么搞懂jQuery</span>
+                    </p>
+                    <p>
+                        <span style="background-color: rgb(238, 25, 25);">4</span>
+                        <span>看看前端到底干了啥</span>
+                    </p>
+                    <p>
+                        <span style="background-color: rgb(19, 166, 185);">5</span>
+                        <span>跟我一起学vue</span>
+                    </p>
+                </div>
+            </div>
+            <div class="line5">
+                <div class="line5-left">
+                    <p>最</p>
+                    <p>近</p>
+                    <p>访</p>
+                    <p>客</p>
+                </div>
+                <div class="line5-right">
+                    <img src="./image/tou2.jpg" alt="塔">
+                    <img src="./image/tou3.jpg" alt="">
+                    <img src="./image/tou4.jpg" alt="">
+                    <img src="./image/tou5.jpg" alt="">
+                    <img src="./image/tou6.jpg" alt="">
+                    <img src="./image/tou1.jpg" alt="">
+                    <img src="./image/tou3.jpg" alt="">
+                    <img src="./image/tou4.jpg" alt="">
+                    <img src="./image/tou5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="hidebtn">
+            <i class="iconfont icon-xiangzuo"></i>
+        </div>
+    </div>
+    <!-- 1.1隐藏蓝结束 -->
+    <div class="content">
+        <h2>您现在的位置是：
+            <a href="./index.html">首页</a>&nbsp;&gt;&nbsp;
+            <a href="./message.html">留言</a>&nbsp;&gt;&nbsp;
+        </h2>
+        <div class="content-left" style="border-top: 5px solid #9FCAB1;">
+            <div class="left-line1">
+                <div class="left-line1-circle"><a href="./login.html">登录</a></div>
+            </div>
+            <div class="left-line2">
+                <div class="left-line2-top">
+                    <div class="area-textarea">
+                        <textarea class="textarea-content" name="" node-type="textarea" id="txtcontent"
+                            placeholder="有事没事说两句..."></textarea>
+                    </div>
+                </div>
+                <div class="left-line2-bottom">
+                    <ul>
+                        <li class="iconfont icon-biaoqing"></li>
+                        <li class="iconfont icon-tupian_huaban"></li>
+                    </ul>
+                    <div class="comment" id="btnAdd">畅言一下</div>
+                </div>
+            </div>
+            <div class="left-line3">
+                <div class="left-line3-title">评论</div>
+                <div class="left-line3-comment">
+                    <span class="comment-number">
+                        <span class="cn-number">1902</span>人参与,
+                        <span class="cn-number">671</span>条评论
+                    </span>
+                </div>
+            </div>
+            <div class="left-line4">
+                <span>热门评论</span>
+            </div>
+            <div class="left-line5" id="tbList">
+                <div class="hotComent">
+                    <div class="hotComent-left"><img class="hotComent-left-img" src="./image/tou1.jpg" alt=""></div>
+                    <div class="hotComent-right">
+                        <p>
+                            <span>不知道叫啥</span><span>[23232.@qq.com]</span><span>2018年8月15日14:45:34</span>
+                        </p>
+                        <p>上线了上线了三斜杠</p>
+                        <p>
+                            <span class="delete">删除</span>
+                            <span class="iconfont icon-lian_jie"></span>
+                            <span class="iconfont icon-pinglun"></span>
+                            <span class="iconfont icon-dianzan"></span>
+                            <span class="reponse">回复</span>
+                        </p>
+                        <div class="repContent">
+                            <img src="./image/tou2.jpg" alt=""><span>1刘德华:</span>
+                            <span class="ct">但是</span>
+                            <span class="del">删除评论</span>
+                        </div>
+                    </div>
+                    <div class="hotComent-bottom">
+                        <img src="./image/tou2.jpg" alt=""><span>1刘德华:</span>
+                        <div class="area-textarea">
+                            <textarea class="textarea-content" name="" node-type="textarea" id="repContent"
+                                placeholder="有事没事说两句..."></textarea>
+                        </div>
+                        <p><span class="rep">回复</span></p>
+                    </div>
+                    <!-- <div class="repContent">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="content-right-line1">
+                <div class="line1-title">
+                    <span>
+                        <input class="swing" id="artist" type="text" placeholder="输入关键字搜索">
+                        <label for="artist">Search</label>
+                    </span>
+                </div>
+                <div class="line1-content">
+                    <ul id="category">
+                        <li class="" data-index="0"><a href="#">全部文章</a></li>
+                        <li class="" data-index="1"><a href="#">个人日记</a></li>
+                        <li class="" data-index="2"><a href="#">HTML5&CSS3</a></li>
+                        <li class="" data-index="3"><a href="#">JavaScript</a></li>
+                        <li class="" data-index="4"><a href="#">ASP.NET MVC</a></li>
+                        <li class="" data-index="5"><a href="#">其他</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-right-line2">
+                <div class="line2-title">
+                    <span>点击排行</span>
+                </div>
+                <div class="line2-content">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i>1</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>2</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>3</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>4</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>5</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>6</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-right-line3">
+                <div class="line3-title">
+                    <span>热门文章</span>
+                </div>
+                <div class="line3-content">
+<<<<<<< HEAD
+                    <ul><li><a href=""><img src="../boke/image/img2.jpg" alt=""><span>在工作中可能有一些成熟的框架或者市面上有很多项目 怎么快速的创建属于自己自定义的项目呢 项目名称</span></a></li></ul><ul><li><a href=""><img src="../boke/image/img1.jpg" alt=""><span>一夜之间程序员突然发现，自己成了新生代农民工。</span></a></li></ul><ul><li><a href=""><img src="../boke/image/img9.jpg" alt=""><span>在工作中可能有一些成熟的框架或者市面上有很多项目 怎么快速的创建属于自己自定义的项目呢 项目名称</span></a></li></ul><ul><li><a href=""><img src="../boke/image/img9.jpg" alt=""><span>用jenkins部署到远程Linux</span></a></li></ul><ul><li><a href=""><img src="../boke/image/img2.jpg" alt=""><span>在工作中可能有一些成熟的框架或者市面上有很多项目 怎么快速的创建属于自己自定义的项目呢 项目名称</span></a></li></ul><ul><li><a href=""><img src="../boke/image/img1.jpg" alt=""><span>用jenkins部署到远程Linux</span></a></li></ul>
+=======
+                    <ul><li><a href=""><img src="./image/img2.jpg" alt=""><span>在工作中可能有一些成熟的框架或者市面上有很多项目 怎么快速的创建属于自己自定义的项目呢 项目名称</span></a></li></ul><ul><li><a href=""><img src="./image/img1.jpg" alt=""><span>一夜之间程序员突然发现，自己成了新生代农民工。</span></a></li></ul><ul><li><a href=""><img src="./image/img9.jpg" alt=""><span>在工作中可能有一些成熟的框架或者市面上有很多项目 怎么快速的创建属于自己自定义的项目呢 项目名称</span></a></li></ul><ul><li><a href=""><img src="./image/img9.jpg" alt=""><span>用jenkins部署到远程Linux</span></a></li></ul><ul><li><a href=""><img src="./image/img2.jpg" alt=""><span>在工作中可能有一些成熟的框架或者市面上有很多项目 怎么快速的创建属于自己自定义的项目呢 项目名称</span></a></li></ul><ul><li><a href=""><img src="./image/img1.jpg" alt=""><span>用jenkins部署到远程Linux</span></a></li></ul>
+>>>>>>> 08301d6 (a)
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2.内容区域开始 -->
+    <!-- 3.尾部区域 -->
+    <!-- 3。尾部区域结束 -->
+    <ul class="layui-fixbar" id="toTop">
+        <li class="iconfont icon-top" lay-type="top" style="display: list-item;"></li>
+    </ul>
+    <div id="QPlayer">
+        <div id="pContent">
+            <div id="player">
+                <span class="cover"></span>
+                <div class="ctrl">
+                    <div class="musicTag marquee">
+                        <strong>Title</strong>
+                        <span> - </span>
+                        <span class="artist">Artist</span>
+                    </div>
+                    <div class="progress">
+                        <div class="timer left">0:00</div>
+                        <div class="contr">
+                            <div class="rewind icon"></div>
+                            <div class="playback icon"></div>
+                            <div class="fastforward icon"></div>
+                        </div>
+                        <div class="right">
+                            <div class="liebiao icon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ssBtn">
+                <div class="adf"></div>
+            </div>
+        </div>
+        <ol id="playlist"></ol>
+    </div>
+    <!-- <script src="./layui/layui.js"></script> -->
+    <script type="text/javascript" color="0,0,255" opacity="0.5" zIndex="-2" count="300" src="./js/article.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/base.js"></script>
+    <!-- <script src="./js/articleData.js"></script> -->
+    <script>
+        $(function () {
+            $(".hidebtn").click(function () {
+                $('.hideblock').toggleClass('show');
+                $(this).toggleClass(function () {
+                    if ($(this).hasClass('selet')) {
+                        $(this).removeClass('selet');
+                        return 'hidebtn';
+                    } else {
+                        $(this).removeClass('hidebtn');
+                        return 'selet';
+                    }
+                })
+            })
+        });
+    </script>
+    <script>
+        function bgChange() {
+            var lis = $('.lib');
+            for (var i = 0; i < lis.length; i += 2)
+                lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
+        }
+        window.onload = bgChange;
+        let phone = localStorage.getItem('phone');
+        let password = localStorage.getItem('password')
+        let img = localStorage.getItem('img')
+        if (img ==null) {
+            window.location.href = "./resiger.html";
+        } else {
+            $(".qq").removeClass().addClass("qq");
+            var imgStr = '<img src="' + img + '" class="aut" alt="">';
+            $(".qq").append(imgStr);
+            $(".left-line1-circle a").text("已登录").css({
+                "font-weight": "800px",
+                "color": "#1ABC9C"
+            }).removeAttr("href");
+            $(".line1-autor img").remove();
+            $(".line1-autor").append(imgStr);
+            $($(".line1-word p").eq(0)).text(phone)
+        }
+    </script>
+</body>
+</html>

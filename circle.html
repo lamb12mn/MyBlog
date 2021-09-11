@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2745258_bhkbe3dw8h.css">
+    <script src="./js/jquery3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/dayList.css">
+    <link rel="stylesheet" href="./css/content-right.css">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./css/circle.css">
+    <link rel="stylesheet" href="./css/player.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <script src="./js/dayList.js"></script>
+    <title>日记</title>
+</head>
+<body>
+    <!-- 1.头部 -->
+    <div class="head">
+        <div class="head-center">
+            <div class="logo"><img src="./image/logo.png" alt=""></div>
+            <a href="www.qq.com" class="qq iconfont icon-qq" style="font-size: 50px;"></a>
+            <div class="nav_menu w">
+                <div class="menu_item">
+                    <div class="home"><i class="iconfont icon-shouye"></i>首页</div>
+                    <div class="web_home"><i class="iconfont icon-shouye"></i><a href="./index.html">首页</a></div>
+                </div>
+                <div class="menu_item">
+                    <div class="home"><i class="iconfont icon-bowen"></i>文章</div>
+                    <div class="web_home"><i class="iconfont icon-bowen"></i><a href="./article.html">文章</a></div>
+                </div>
+                <div class="menu_item">
+                    <div class="home"><i class="iconfont icon-liuyan"></i>留言</div>
+                    <div class="web_home"><i class="iconfont icon-liuyan"></i><a href="./message.html">留言</a></div>
+                </div>
+                <div class="menu_item">
+                    <div class="home"><i class="iconfont icon-quanzi"></i>博客圈</div>
+                    <div class="web_home"><i class="iconfont icon-quanzi"></i><a href="./circle.html">博客圈</a></div>
+                </div>
+                <div class="menu_item">
+                    <div class="home"><i class="iconfont icon-quanzi"></i>日记</div>
+                    <div class="web_home"><i class="iconfont icon-quanzi"></i><a href="./dayList.html">日记</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 1.头部结束 -->
+    <div class="hideContent">
+        <div class="hideblock">
+            <div class="line1">
+                <div class="line1-autor"><img src="./image/tou1.jpg"></div>
+                <div class="line1-word">
+                    <p>Miss.Xiao</p>
+                    <p>程序猿</p>
+                </div>
+            </div>
+            <div class="line2">
+                <ul class="line2-logo">
+                    <li><i class="iconfont icon-github"></i></li>
+                    <li><i class="iconfont icon-xunlei1193424easyiconnet"></i></li>
+                    <li><i class="iconfont icon-tubiao214"></i></li>
+                    <li><i class="iconfont icon-iconfontweixin"></i></li>
+                    <li><i class="iconfont icon-QQ"></i></li>
+                </ul>
+            </div>
+            <div class="line3">
+                <p> NEW PAGE</p>
+            </div>
+            <div class="line4">
+                <div class="line4-left">
+                    <p>热</p>
+                    <p>门</p>
+                    <p>文</p>
+                    <p>章</p>
+                </div>
+                <div class="line4-right">
+                    <p>
+                        <span style="background-color: orange;">1</span>
+                        <span>没有经验的第一次</span>
+                    </p>
+                    <p>
+                        <span style="background-color: rgb(134, 168, 190);">2</span>
+                        <span>设置看板娘</span>
+                    </p>
+                    <p>
+                        <span style="background-color: rgb(79, 24, 131);">3</span>
+                        <span>教你怎么搞懂jQuery</span>
+                    </p>
+                    <p>
+                        <span style="background-color: rgb(238, 25, 25);">4</span>
+                        <span>看看前端到底干了啥</span>
+                    </p>
+                    <p>
+                        <span style="background-color: rgb(19, 166, 185);">5</span>
+                        <span>跟我一起学vue</span>
+                    </p>
+                </div>
+            </div>
+            <div class="line5">
+                <div class="line5-left">
+                    <p>最</p>
+                    <p>近</p>
+                    <p>访</p>
+                    <p>客</p>
+                </div>
+                <div class="line5-right">
+                    <img src="./image/tou2.jpg" alt="">
+                    <img src="./image/tou3.jpg" alt="">
+                    <img src="./image/tou4.jpg" alt="">
+                    <img src="./image/tou5.jpg" alt="">
+                    <img src="./image/tou6.jpg" alt="">
+                    <img src="./image/tou1.jpg" alt="">
+                    <img src="./image/tou3.jpg" alt="">
+                    <img src="./image/tou4.jpg" alt="">
+                    <img src="./image/tou5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="hidebtn">
+            <i class="iconfont icon-xiangzuo"></i>
+        </div>
+    </div>
+    <div class="content">
+        <h2>您现在的位置是：
+            <a href="./index.html">首页</a>&nbsp;&gt;&nbsp;
+            <a href="./circle.html">博客圈</a>&nbsp;&gt;&nbsp;
+        </h2>
+        <div class="content-left">
+            <div class="container">
+                <div class="wrap">
+                    <div class="cube">
+                        <div class="out-front">
+                            <img src="./image/t1.gif" alt="">
+                        </div>
+                        <div class="out-back">
+                            <img src="./image/t2.png" alt="">
+                        </div>
+                        <div class="out-left">
+                            <img src="./image/t3.png" alt="">
+                        </div>
+                        <div class="out-right">
+                            <img src="./image/t4.png" alt="">
+                        </div>
+                        <div class="out-top">
+                            <img src="./image/t5.png" alt="">
+                        </div>
+                        <div class="out-bottom">
+                            <img src="./image/t6.png" alt="">
+                        </div>
+                        <span class="in-front">
+                            <img src="./image/t7.png" alt="">
+                        </span>
+                        <span class="in-back">
+                            <img src="./image/t8.png" alt="">
+                        </span>
+                        <span class="in-left">
+                            <img src="./image/t1.png" alt="">
+                        </span>
+                        <span class="in-right">
+                            <img src="./image/t2.png" alt="">
+                        </span>
+                        <span class="in-top">
+                            <img src="./image/t3.png" alt="">
+                        </span>
+                        <span class="in-bottom">
+                            <img src="./image/t4.png" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="bannerRight">
+                <ul id="bannerRightList">
+                    <li><img src="./image/tou2.jpg"><a href="#">人生就像一杯茶，不会苦一辈子，但总会苦一阵子。</a></li>
+                    <li><img src="./image/tou3.jpg"><a href="#">你坚持下来了，而别人坚持不下来，这就是你的资本。</a></li>
+                    <li><img src="./image/tou4.jpg"><a href="#">生活有苦有甜，才叫完整。</a></li>
+                    <li><img src="./image/tou5.jpg"><a href="#">君子的力量永远是行动的力量，而不是语言的力量。</a></li>
+                    <li><img src="./image/tou6.jpg"><a href="#">人生寂寞是一种力量。</a></li>
+                    <li><img src="./image/tou2.jpg"><a href="#">茶不过两种姿态，浮、沉；饮茶人不过两种姿势，拿起、放下。</a></li>
+                    <li><img src="./image/tou3.jpg"><a href="#">生活就像是一盘巧克力，你永远不知道会碰到什么味道。</a></li>
+                    <li><img src="./image/tou4.jpg"><a href="#">每个人都有自己的泪要擦，每个人都有自己的路要走。</a></li>
+                    <li><img src="./image/tou5.jpg"><a href="#">宁愿因做自己而招人厌恶，也不愿为了迎合他人而伪装自己。</a></li>
+                    <li><img src="./image/tou6.jpg"><a href="#">多数的错失，是因为不坚持，不努力，不挽留。</a></li>
+                </ul>
+            </div>
+            <div class="circlesContent">
+                <p>网&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名：Miss.Xiao</p>
+                <p class="circlesContent-line2">职&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp业：统称程序员</p>
+                <p>我想说的：用经历来说话，用本事来赚钱，用钱干想干的事。一生不长，且行且珍惜。</p>
+                <p>使用工具：</p>
+<<<<<<< HEAD
+                <span>[Visual Studio] C#、C++、Python <br>[Android Studio] Android
+=======
+                <span>[Visual Studio] JavaScript、CSS、HTML、 <br>[Android Studio] Android
+>>>>>>> 08301d6 (a)
+                </span>
+                <p>使用技术:</p>
+                <span>[主] C#：WPF、Winform、Socket/TCP/UDP、COM、PLC、Xml、Json、RFID、Dll、上位机、SDK、线程、接口、委托、MVC、EF、Html、Linq、Div
+                    + Css、Ajax、jQuery、JavaScript ...<br>[自学] C++：Dll、SDK、基本用于底层操作<br>[自学] Python：爬虫<br>[自学] Java：Android
+                </span>
+                <p> 数 据 库：</p>
+<<<<<<< HEAD
+                <span>Oracle<br>SqlServer<br>Sqlite</span>
+                <p>使用系统:</p>
+                <span>Windows 7 旗舰版<br>Windows 10 专业版<br></span>
+                <p>博客介绍:</p>
+                <span>[博客网站] www.shunnet.top<br>[上线时间] 2020年5月20号<br>[网站介绍] 记录生活、技术、每一天<br>[使用技术] C# / Mvc4 / EF /
+=======
+                <span>Oracle<br>SqlServer<br>MySQL<br>MongoDB</span>
+                <p>使用系统:</p>
+                <span>Linux CentOS<br>Windows 10 专业版<br></span>
+                <p>博客介绍:</p>
+                <span>[博客网站] https://lamb12mn.github.io/MyBlog/<br>[上线时间] 2021年8月23号<br>[网站介绍] 记录生活、技术、每一天<br>[使用技术] C# / Mvc4 / EF /
+>>>>>>> 08301d6 (a)
+                    SqlServer 2012 / Api<br>[开发用时] 前端、后端、数据库、接口、逻辑、一个人共用时接近俩月，最大的困难也就是前端这块，毕竟不是专业前端</span>
+                <p>赞助模块：</p>
+                <div>
+                </div>
+                <img src="./image/zhifubao.jpg" alt="">
+                <img src="./image/weixin.jpg" alt="">
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="content-right-line1">
+                <div class="line1-title">
+                    <span>
+                        <input class="swing" id="artist" type="text" placeholder="输入关键字搜索">
+                        <label for="artist">Search</label>
+                    </span>
+                </div>
+                <div class="line1-content">
+                    <ul id="category">
+                        <li class="" data-index="0"><a href="#">全部文章</a></li>
+                        <li class="" data-index="1"><a href="#">个人日记</a></li>
+                        <li class="" data-index="2"><a href="#">HTML5&CSS3</a></li>
+                        <li class="" data-index="3"><a href="#">JavaScript</a></li>
+                        <li class="" data-index="4"><a href="#">ASP.NET MVC</a></li>
+                        <li class="" data-index="5"><a href="#">其他</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-right-line2">
+                <div class="line2-title">
+                    <span>点击排行</span>
+                </div>
+                <div class="line2-content">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i>1</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>2</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>3</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>4</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>5</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>6</i>
+                                <p>阿斯顿法国红酒看来自行车</p>
+                                <span class="down-info"><em>2021年8月7日</em></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-right-line3">
+                <div class="line3-title">
+                    <span>热门文章</span>
+                </div>
+                <div class="line3-content">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2.内容区域开始 -->
+    <!-- 3.尾部区域 -->
+    <!-- 3。尾部区域结束 -->
+    <ul class="layui-fixbar" id="toTop">
+        <li class="iconfont icon-top" lay-type="top" style="display: list-item;"></li>
+    </ul>
+    <div id="QPlayer">
+        <div id="pContent">
+            <div id="player">
+                <span class="cover"></span>
+                <div class="ctrl">
+                    <div class="musicTag marquee">
+                        <strong>Title</strong>
+                        <span> - </span>
+                        <span class="artist">Artist</span>
+                    </div>
+                    <div class="progress">
+                        <div class="timer left">0:00</div>
+                        <div class="contr">
+                            <div class="rewind icon"></div>
+                            <div class="playback icon"></div>
+                            <div class="fastforward icon"></div>
+                        </div>
+                        <div class="right">
+                            <div class="liebiao icon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ssBtn">
+                <div class="adf"></div>
+            </div>
+        </div>
+        <ol id="playlist"></ol>
+    </div>
+    <script src="./layui/layui.js"></script>
+<<<<<<< HEAD
+    <script type="text/javascript" color="0,0,255" opacity="0.5" zIndex="-2" count="300" src="./js/article.js"></script>
+=======
+    <script type="text/javascript" color="0,0,255" opacity="0.5" zindex="-2" count="300" src="./js/article.js"></script>
+>>>>>>> 08301d6 (a)
+    <script src="./js/base.js"></script>
+    <script src="./js/articleData.js"></script>
+    <script src="./js/common.js"></script>
+    <script>
+        //数据修改
+        $(function () {
+            //获取默认尺寸
+            var outWidth = $(" .container .wrap .cube div").width();
+            var inWidth = $(" .container .wrap .cube span").width();
+            var inOffset = 0.25 * outWidth;
+            var outOffset = 0.5 * outWidth;
+            //修改尺寸  okk但offset还要改
+            function set(outWidth, inWidth) {
+                inWidth = inWidth || 0.5 * outWidth;
+                $(" .container .wrap .cube div").width(outWidth);
+                $(" .container .wrap .cube span").width(inWidth);
+            }
+        })
+        /* 5.从下往上滚动*/
+        $("#bannerRightList li").mouseover(function (e) {
+            $(this).addClass("animated bounce");
+            // bounceInLeft
+            setTimeout(function () {
+                $("#bannerRightList li").removeClass('bounce');
+            }, 1000);
+        })
+        $(".circlesContent p").mouseover(function (e) {
+            $(this).addClass("animated flipInY");
+            // bounceInLeft
+            setTimeout(function () {
+                $(".circlesContent p").removeClass('flipInY');
+            }, 2000);
+        })
+        // /* 5.从下往上滚动*/
+        $(function () {
+            //每隔两秒进行一次滚动
+            var timing = setInterval("info()", 1000);
+            $("ul").hover(
+                function () {
+                    clearInterval(timing);
+                },
+                function () {
+                    timing = setInterval("info()", 1000);
+                }
+            )
+        })
+        function info() {
+            //复制第一个li
+            var li = $("#bannerRightList>li:eq(0)").clone();
+            //使用animate对li的外边距进行调整从而达到向上滚动的效果
+            $("#bannerRightList>li:eq(0)").animate({
+                marginTop: "-50px"
+            }, 1000, function () {
+                //对已经消失的li进行删除
+                $("#bannerRightList>li:eq(0)").remove();
+                //把复制后的li插入到最后
+                $("#bannerRightList").append(li);
+            })
+        }
+    </script>
+    <script>
+        function bgChange() {
+            var lis = $('.lib');
+            for (var i = 0; i < lis.length; i += 2)
+                lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
+        }
+        window.onload = bgChange;
+        let phone = localStorage.getItem('phone');
+        let password = localStorage.getItem('password')
+        let img = localStorage.getItem('img')
+        // console.log(phone, password, img);
+        // if (phone!==""&&pass!==""){
+        // }
+        if (img ==null) {
+            window.location.href = "./resiger.html";
+        } else {
+            $(".qq").removeClass().addClass("qq");
+            var imgStr = '<img src="' + img + '" class="aut" alt="">';
+            $(".qq").append(imgStr);
+            $(".line1-autor img").remove();
+            $(".line1-autor").append(imgStr);
+            $($(".line1-word p").eq(0)).text(phone)
+        }
+           //初始化应用缓存
+// (function(){
+// if(!getCookie('eks_cache_keys')){//每次进入页面初始化缓存
+// 　　localStorage.clear();
+// }    
+// })();
+    </script>
+</body>
+</html>
