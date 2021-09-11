@@ -1,17 +1,4 @@
- //    $(document).ready(function(){
-        //         $('.aniview-v3').AniView();
-        //         $('.aniview-v4').AniView({
-        //             animateClass: 'animate__animated'
-        //         });
-        //     });
-        // function bgChange() {
-        //     var lis = $('.lib');
-        //     for (var i = 0; i < lis.length; i += 2)
-        //         lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
-        // }
-        // window.onload = bgChange;
-
-        let phone = localStorage.getItem('phone');
+      let phone = localStorage.getItem('phone');
         let password = localStorage.getItem('password')
         let img = localStorage.getItem('img')
         console.log(phone, password, img);
