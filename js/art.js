@@ -33,7 +33,7 @@
             loadContent();
         })
         $(".nextPage").click(function (e) {
-            console.log($(this).parent().parent().attr('id'));
+            // console.log($(this).parent().parent().attr('id'));
             $(this).parent().parent().find(".blogs").remove();
             loadData($(this).parent().parent().attr('id'), 2);
             loadContent();

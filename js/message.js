@@ -1,10 +1,6 @@
 var jsonArr = [{
     "id": 1,
-<<<<<<< HEAD
-    "img": "../../image/tou1.jpg",
-=======
     "img": "./image/tou1.jpg",
->>>>>>> 08301d6 (a)
     "name": "1刘德华",
     "email": "123@126.com",
     "content": "把轻松注入你的空气，把快乐铺满你的脚底",
@@ -12,11 +8,7 @@ var jsonArr = [{
 },
 {
     "id": 2,
-<<<<<<< HEAD
-    "img": "../../image/tou2.jpg",
-=======
     "img": "./image/tou2.jpg",
->>>>>>> 08301d6 (a)
     "name": "2刘德华",
     "email": "123@126.com",
     "content": "出生一张纸，忙碌一辈子",
@@ -24,11 +16,7 @@ var jsonArr = [{
 },
 {
     "id": 3,
-<<<<<<< HEAD
-    "img": "../../image/tou3.jpg",
-=======
     "img": "./image/tou3.jpg",
->>>>>>> 08301d6 (a)
     "name": "3刘德华",
     "email": "133@126.com",
     "content": "你在天南，我在地北，我们之间是天涯。",
@@ -36,11 +24,7 @@ var jsonArr = [{
 },
 {
     "id": 4,
-<<<<<<< HEAD
-    "img": "../../image/tou4.jpg",
-=======
     "img": "./image/tou4.jpg",
->>>>>>> 08301d6 (a)
     "name": "4郭富城",
     "email": "113@126.com",
     "content": "寒风吹过，吹落了树叶，吹枯了小草，却吹不掉我的思念",
@@ -48,11 +32,7 @@ var jsonArr = [{
 },
 {
     "id": 5,
-<<<<<<< HEAD
-    "img": "../../image/tou5.jpg",
-=======
     "img": "./image/tou5.jpg",
->>>>>>> 08301d6 (a)
     "name": "5张学友",
     "email": "223@126.com",
     "content": "鉴于你锻炼迟到，上班从不迟到；工作兴致高，但玩乐兴趣不高",
@@ -60,11 +40,7 @@ var jsonArr = [{
 },
 {
     "id": 6,
-<<<<<<< HEAD
-    "img": "../../image/tou6.jpg",
-=======
     "img": "./image/tou6.jpg",
->>>>>>> 08301d6 (a)
     "name": "6孙红雷",
     "email": "423@126.com",
     "content": "天气再冷，也不冷落祝福；树叶再落，也不落下情意",

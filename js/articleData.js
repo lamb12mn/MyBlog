@@ -452,9 +452,10 @@ function loadData(type, page) {
     var $link = '#' + type;
     // console.log($link);
     $($link).prepend($blogs);
-
-
   }
+}
+//加载右边热门话题内容
+function loadLine3(type, page) {  
   for (let i = 0; i < 2; i++) {
     // articleData[type][page - 1]['list'][3]
     let $json = articleData[type][page - 1]['list'][i];
@@ -464,6 +465,9 @@ function loadData(type, page) {
     $('.line3-content').prepend($uls);
   }
 }
+loadLine3('dian', 1);
+loadLine3('new', 1);
+loadLine3('most', 1);
 loadData('new', 1);
 loadData('dian', 1);
 loadData('most', 1);
